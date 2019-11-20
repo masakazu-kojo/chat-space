@@ -22,14 +22,13 @@
 |image|text||
 |text|text||
 |user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
 - belongs_to :user
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|index: true, null: false, unique:true|
-|group|references|null: false, foreign_key: true|
-- belongs_to :group
-- has_many :members
-- has_many :messages
+|user|references|null: false, foreign_key: true|
+- belongs_to :user
+- has_many :comments
