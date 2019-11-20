@@ -7,7 +7,7 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
-## user_tableテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique:true|
@@ -25,3 +25,11 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|index: true, null: false, unique:true|
+|group|references|null: false, foreign_key: true|
+- belongs_to :group
+- has_many :members
+- has_many :messages
