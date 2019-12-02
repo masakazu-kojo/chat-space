@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.contents{
+  width: 300px;
+  color: white;
+  float: left;
+  padding:0 20;
+}
+.contents-top{
+  background-color: #253141;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.contents-bottom{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 20px 20px 0;
+  overflow: scroll;
+}
+
+
+.contents__box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
+.contents__logo{
+  size: 16px;
+  font-weight: bold;
+  color: #FFFF;
+}
+.contents__icon{
+  display: flex;
+}
+.contents__item{
+  size: 16px;
+  font-weight: bold;
+  color: #FFFF;
+  float: left; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page{
+  width: calc(100vw - 300px);
+  float: left;
+  height: 100vw;
+}
+.main-header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eee;
+  overflow: scroll;
+}
+.main-header__logo{
+  padding-top:35px;
+  padding-bottom:25px;
+}
+.main-header__logo_menber{
+  display: flex;
+  font-size: 12px;
+  color: #999999;
+}
+.main-header__edit-btn{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 30px;
+  border: solid 1px #38aef0;
+  position: absolute;
+  right: 40px;
+  color: blue;
+}
+.messasge-page{
+  height: calc(100vh - 190px);
+  padding: 46px 40px;
+  background-color: #fafafa;
+  overflow: scroll;
+}
+.message__box{
+ padding-bottom: 40px;
+}
+.message-line{
+  display: flex;
+  margin-bottom: 10px;
+}
+.message__menber{
+  color: #434a54;
+  font-size: 16px;
+  font-weight: bold;
+}
+.message__date{
+  color: #999999;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.message__chat{
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.message-form{
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #ddd;
+}
+.form__send{
+  display: flex;
+}
+.message-text{
+  height: 50px;
+  width: 100%;
+  padding: 0 40px 0 10px;
+  color: #434a54;
+  border-style: none;
+}
+.input-box__image{
+  font-size: 1.3rem;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.send{
+  width: 100px;
+  height: 50px;
+  padding: 0 30px;
+  margin-left: 15px;
+  background-color: #38aef0;
+  color: white;
+  cursor: pointer;
+}
