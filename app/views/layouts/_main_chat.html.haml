@@ -19,6 +19,7 @@
   .message-form
     .form__send
       %input.message-text{:placeholder => "type a message"}
-      %label{class: "input-box__image", for: "message_image"}
-        = icon('fas', 'image')
-      %input.send{type: "submit", value: "Send"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input.display-none{type: "file"}
+        %input.send{type: "submit", value: "Send"}
