@@ -1,0 +1,25 @@
+.main-page
+  .main-page__header
+    .main-page__header__sub
+      .main-page__header__sub__logo
+        group name
+      .main-page__header__sub__logo_menber
+        Menber
+    .main-page__header__edit-btn
+      Edit
+  .main-page__messasge-page
+    .main-page__messasge-page__box
+      .main-page__messasge-page__box__line
+        .main-page__messasge-page__box__line__menber
+          masa
+        .main-page__messasge-page__box__line__date
+          2019/12/1(sun)
+      .main-page__messasge-page__box__chat
+        test
+  .main-page__message-form
+    .main-page__message-form__send
+      %input.message-text{placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input.display-none{type: "file"}
+        %input.send-box{type: "submit", value: "Send"}
