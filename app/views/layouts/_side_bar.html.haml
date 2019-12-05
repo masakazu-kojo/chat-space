@@ -5,14 +5,17 @@
         = current_user.name
       .contents__top__box__icons
       %li.list
-        = link_to do
+        = link_to new_group_path do
           = icon('fas', 'pen-square', class: 'icon')
       %li.list
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
+
   .contents__bottom
-    .contents__bottom__box
-      .contents__bottom__box__item
-        test2
-      .contents__bottom__box__message
-        まだメッセージありません
+    - current_user.groups.each do |group|
+      .contents__bottom__box
+        = link_to group_messages_path(group) do
+          .contents__bottom__box__item
+            = group.name
+          .contents__bottom__box__message
+            メッセージはありません
