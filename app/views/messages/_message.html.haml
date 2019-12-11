@@ -1,0 +1,11 @@
+.main-page__messasge-page__box
+  .main-page__messasge-page__box__line
+    .main-page__messasge-page__box__line__menber
+      = message.user.name
+      .main-page__messasge-page__box__line__date
+        = message.created_at.strftime("%Y/%m/%d %H:%M")
+        .main-page__messasge-page__box__chat
+          - if message.content.present?
+            %p.lower-message__content
+              = message.content
+          = image_tag message.image.url, class: 'main-page__messasge-page__box__chat__image' if message.image.present?
