@@ -10,11 +10,7 @@
       
   .main-page__messasge-page
     = render @messages
-    .main-page__messasge-page__box
-      .main-page__messasge-page__box__line
-        .main-page__messasge-page__box__line__menber
-        .main-page__messasge-page__box__line__date
-      .main-page__messasge-page__box__chat
+    
   .main-page__message-form
     = form_for [@group, @message] do |f|
       .main-page__message-form__form-master
