@@ -78,7 +78,6 @@ $(function(){
   
     var reloadMessages = function() {
       last_message_id = $('.main-page__messasge-page__box:last').data("message-id");
-      console.log(last_message_id);
       $.ajax({
         url: "api/messages",
         type: 'get',
@@ -86,9 +85,7 @@ $(function(){
         data: {id: last_message_id}
       })
       .done(function(messages) {
-        console.log(messages);
         if (messages.length !== 0) {
-          console.log("aaaa");
           var insertHTML = '';
           $.each(messages, function(i, message) {
             insertHTML += buildHTML(message)
@@ -100,7 +97,7 @@ $(function(){
         }
       })
       .fail(function() {
-        console.log('error');
+        alert("自動更新に失敗しました");
       });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
