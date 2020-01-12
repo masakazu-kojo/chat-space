@@ -14,7 +14,7 @@
   .contents__bottom
     - current_user.groups.each do |group|
       .contents__bottom__box
-        = link_to group_messages_path(group) do
+        = link_to group_messages_path(group),class: "Grouplink" do
           .contents__bottom__box__item
             = group.name
           .contents__bottom__box__message

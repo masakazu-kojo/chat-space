@@ -29,6 +29,17 @@
       &__icons{
         display: flex;
       }
+      .list{
+        color: #253141;
+      }
+      .fas.fa-pen-square.icon{
+         font-style: normal;
+         color: white;
+      }
+      .fas.fa-cog.icon{
+         font-style: normal;
+         color: white;
+      }
     }
   }
   &__bottom{
@@ -38,6 +49,10 @@
     overflow: scroll;
     &__box{
       margin-bottom: 40px;
+      .Grouplink{
+        text-decoration: none;
+        color: white;
+      }
       &__item{
         font-size: 15px;
         margin-bottom: 5px;
@@ -123,8 +138,8 @@
     }
       &__form-master{
         display: flex;
-        position: relative;
         width: 100%;
+        position: relative;
         .form__message{
           height: 50px;
           width: 100%;
@@ -151,8 +166,8 @@
           background-color: #38aef0;
           color: white;
           cursor: pointer;
-        }
-    
+          position: relative;
+        }    
     } 
   }
 }
