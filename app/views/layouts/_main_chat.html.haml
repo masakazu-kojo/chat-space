@@ -4,6 +4,9 @@
       .main-page__header__sub__logo
         = current_user.name
       .main-page__header__sub__logo_menber
+        Menber :
+        - @group.users.each do |user|
+          %li= user.name
         
     .main-page__header__edit-btn
       = link_to "Edit", edit_group_path(@group)

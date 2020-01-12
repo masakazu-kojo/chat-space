@@ -30,7 +30,8 @@
         display: flex;
       }
       .list{
-        color: #253141;
+        list-style: none;
+        font-size: 15px;
       }
       .fas.fa-pen-square.icon{
          font-style: normal;
@@ -82,12 +83,16 @@
       padding: 0;
       &__logo{
         padding-top:35px;
-        padding-bottom:25px;
+        padding-bottom:15px;
       }
       &__logo_menber{
         display: flex;
         font-size: 12px;
         color: #999999;
+        list-style: none;
+         li{
+          margin-left: 5px;
+         }
       }
     }
     &__edit-btn{
